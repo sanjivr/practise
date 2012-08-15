@@ -1,0 +1,281 @@
+1. Check if x is a power of 2
+	(x & x-1 == 0)
+2. Knapsack Problem
+	http://dhruvbird.blogspot.in/2011/09/integer-01-bounded-knapsack-problem.html
+Dutch National Flag
+2. Subset Sum problem
+3. Area of histogram 
+	http://ideone.com/BAjfa
+3. Long common subsequence
+	Suffix Tree.
+4. Matrix Chain Multiplication.
+4. GCD/Euclid's theorem
+5. Message Broker, Load Balancer, Logging Framework, Connection Pool
+	http://boost-log.sourceforge.net/libs/log/doc/html/log/design.html
+URL Shortener http://stackoverflow.com/questions/742013/how-to-code-a-url-shortener
+Elevator Design 
+	http://stackoverflow.com/questions/493276/modelling-an-elevator-using-object-oriented-analysis-and-design
+6. User Personalization Framework
+Trending Topics
+	http://www.quora.com/What-tools-algorithms-or-data-structures-would-you-use-to-build-a-Trending-Topics-algorithm-for-a-high-velocity-stream
+	http://www.igvita.com/2010/01/06/flow-analysis-time-based-bloom-filters/
+Recommendation Systems -
+7. Given a sequence of N numbers, one is missing, find the missing
+8. Given a sequence of N+1 numbers, one is duplicated, find the duplicate
+9. Given a sequence of N numbers, one is replaced with a duplicate. Find both of them.
+
+1. Traversal - In, pre,post - recursive, iterative - DFS
+2. Expression Tree - Evaluation and construction
+3. Construction of tree given in, pre/post
+4. Serialization of tree, bst
+	bst - save in preorder
+	tree - save inorder, postorder
+5. Check if bst is balanced - max ht - min ht <= 1
+6. BFS search, level ordered, zig zag print
+7. Mirror Image
+8. delete min from binary tree
+9. min height, max height
+10. diameter of tree - max (left_height+right_height+1, max(left_diameter, right_diameter))
+11. LOWEST COMMON ANCESTOR - given 2 nodes, find their height. h1, h2. for the node whose height is greater, follow parent pointers for (h2-h1) distance. From this point on, move one node at a time. When both nodes are equal, lowest common ancestor is found
+11. a) given 2 links which merge, find merge point
+	      _ _ _ _ _	
+	-----<
+	      - - - - - - -< 
+		find length of both lists, pointer in longer list moves forward by difference in length, both pointers move together one at a time till they are same.
+11.b) given a link list with a loop, find out the node at which loop starts -> detect loop using fast and slow pointers. at point of detection, break the loop at node "n". This gives you 11.a), start pointer of list 1 is start of main list, start pointer of list 2 = n->next. After saving n->next, set n->next = NULL to break the loop.
+
+11. Topological sort
+MAXIMAL SUM  SUBARRAY : Lookup wikipedia
+	max_sum_ending_here = max_so_far = 0;
+	for(i = 0; i < n; i++) {
+		
+		max_sum_ending_here = max(a[i] , a[i] +  max_sum_ending_here);
+		max_so_far = max(max_so_far, max_sum_ending_here);
+	}
+MAXIMAL Difference in array , ie max(a[j] - a[i]), j > i.
+	curr_max_diff = 0;
+	curr_min = a[0]
+	for(i = 1; i < n ; i++) {
+		if(a[i] <= curr_min) {
+			curr_min = a[i];
+		}else {
+			curr_max_diff = max(curr_max_diff, a[i] - curr_min);
+		}
+	}
+
+12. Palindrome, Palindrome in linked list without reverse operator or i--
+13. Permutation/Combination - Done 
+	Lexicographic order
+
+14. maximum sliding window - Implement using queue with max operation in O(1). Inorder to implement queue with O(1) max follow this algorithm,
+	have an auxiliary dequeue. 
+		insert into aux if ele < back. (i.e , this ele can be the candidate max if current entry in queue is removed)
+				if ele > back (remove back recursively till ele < back)
+		front of aux queue always gives current max. Similarly for min.
+		
+15. stack using 2 queues
+16. queue using 2 stacks
+
+17. Towers of hanoi - non recursive, recursive
+18. K sort linked lists - Merge them. Use a priority queue of size K prefilled with first element among all lists, remove the max, replace with element from list containing max. When list is empty, reduce size of priority queue.
+
+19. Reservoir Sampling
+20. Quick Sort, Merge Sort, External Merge Sort, Heap Sort
+21. Substring Matching : KMP http://jaked409.livejournal.com/91681.html
+22. Edit Distance/Levenshtein distance. 
+23. Spell Correct - Norvig's version - http://norvig.com/spell-correct.html
+24. Hash Function - Python's implementation of dict
+	hash function = hash(s) = h, if x is size of slots, h xor (x-1) gives slot. Open addressing followed by quadratic probing
+	http://www.laurentluce.com/posts/python-dictionary-implementation/
+25. Tries, Red Black trees, Trie Compression, suffix tree.
+26. Treap
+26. Smart Pointes, V-tables, templates.
+27. Median in a stream
+28. Amortized analysis
+29. LRU Cache
+30. Pascal's Triangle
+Singleton, Factory, Abstract Factory, Visitor, Command, Observer, Closure Pattern
+clone a graph
+a^b (a to power b)
+k means clustering
+design irc chat
+	message bus
+	key value storage
+ Number of words in a string
+ Level Order Traversal zig zag
+ K Means Clustering
+ K nearest neighbors out of N - use a heap
+Ajesh
+1. Initially a set of intervals are given. Give a point p1, find all intervals that contains p - Interval Trees. (http://brettwalenz.org/2010/09/28/centered-interval-trees/)
+2. Given a sorted shifted array, search for a number in it.
+	8 9 10 12 14 1 2 3 4 5 6 7
+3. Sparse Vector dot product
+4. LL reversal, k block reversal
+5. Merge two BST's
+Suffix Trees, Prefix Trees
+
+Suffix Trees -> http://stackoverflow.com/questions/9452701/ukkonens-suffix-tree-algorithm-in-plain-english/9513423#9513423
+B tree, B+ tree
+
+Robot in a maze
+top 20 elements from billions of numbers
+http://tech-queries.blogspot.in/2009/04/amazon-interview.html?showComment=1336664644627
+
+Hamiltonian Path
+Anagrams
+Index of a permutation when all permutations are in sorted lexicographic order
+ find the index in an circular array such that the string that is formed starting from that index is first in lexicographic order.
+3 sum problem
+print edges of a binary tree
+determine lexicographic order from dictionary
+Median of numbers distributed across n machines - http://www.quora.com/Distributed-Algorithms/What-is-the-distributed-algorithm-to-find-out-median-of-the-array-of-integers-located-in-different-computers
+
+]
+
+Square root of a number - http://ramp-tech.blogspot.in/
+Data Structures
+	Priority Queue - Increase/Decrease Key
+	Selection Algorithm
+		median of medians for partitioning
+	K largest/smallest items - using min/max heap
+	Paths in binary tree summing to a given value
+	permutation of balanced parantheses
+	Merge algorithm
+	Partial Key Hashing - Suffix Trees
+	
+
+Design Patterns
+	Singleton
+	Factory, Abstract Factory
+	Visitor
+	Command
+	Observer
+	Adapter
+	State
+	Closure
+
+C++
+	cast - http://stackoverflow.com/questions/332030/when-should-static-cast-dynamic-cast-and-reinterpret-cast-be-used
+	virtual inheritance , multiple inheritance
+	virtual table, virtual destructor
+	operator overloading
+		http://stackoverflow.com/questions/4421706/operator-overloading
+	stl ->algorithms & containers
+
+Graphs
+	Shortest Path
+		Djikstra's algorithm
+			Variant for DAG's using topological sort
+		Bellman Ford algorithm
+		Floyd Warshall Algorithm
+	Minimum Spanning Tree
+		Prim's Algorithm
+		Kruskal's Algorithm
+	BFS
+	DFS
+	Topological Sort
+	Maximal Flow Network
+		Ford Fulkerson Algorithm
+
+	Limitations on cycles, negative weights to be considered
+
+Threading Concepts
+	Deadlock
+	Semaphores
+	Readers-Writers Problem
+	Dining Philosophers
+	Producer Consumer
+	Bankers Algorithm
+	Thread Safety
+	Reentrant Code
+	Monolithic Kernel
+
+Dynamic Programming
+	http://www.geeksforgeeks.org/archives/tag/dynamic-programming
+	http://web.iiit.ac.in/~avidullu/pdfs/Dynamic_Programming.pdf
+	http://people.csail.mit.edu/bdean/6.046/dp/
+	Optimal Parenthesis count in a binary expression
+	Knapsack
+		0/1 Unbounded
+		Fractional
+		Integer Unbounded
+	Subset Sum
+	Balanced Partition
+	Matrix Chain Multiplication
+	Coin Change
+		Minimum number of coins required to obtain a Sum
+		Maximum number of ways of combining coins to obtain a Sum
+	Minimum Edit Distance
+	Longest Common Substring
+		Longest Palindrome in a string can be determined by finding the LCS in a string and it's reversal
+	Longest Common Subsequence
+	Longest Increasing Subsequence - O(n^2) and O(nlogn) variants
+		Building Bridge using the LIS and LCS
+
+	Hard Problems - Bin Packing/Cutting Stock/Bitonic Tour for Travelling Salesman
+	
+
+Misc Reading
+http://www.quora.com/Computer-Science/What-are-some-of-the-most-ingenious-algorithms-in-computer-science#
+	Longest and shortest palindromes in a string
+		Highly optimal -> http://www.akalin.cx/longest-palindrome-linear-time
+
+
+
+Total number of inversions
+Union of area of rectangles
+Circular Table- number of combinations of handshakes
+infinite bit stream modulo 3
+clone a graph
+print edges of a binary tree
+
+Puzzles
+	2 Egg Drop Problem
+	Racehorse problem - 25 horses, 5 horses per race. Minimum number of races to determine fastest 3 horses
+	Unfaithful Husbands problem
+	Prisoner hat problem	
+	King's advisor problem
+
+
+Expression tree evaluation
+Expression tree construction from infix
+Merging two BST
+Minimum height of a binary tree
+Post Order Travesal iterative
+2 sorted arrays of size n and 2n. Second array has only n elements. Merge into second array
+removes spaces in place
+remove duplicates in place
+replace spaces with %20c 
+median of stream
+minimum sliding window
+
+LRU Cache implementation
+Trie implementation
+Sorted Rotated Array - Search
+Validate BST
+Median in BST
+KMP Substring
+	http://www.inf.fh-flensburg.de/lang/algorithmen/pattern/kmpen.htm
+Trail of consecutive 1's. - Find sum of such trails for given number
+Sum of elements in a path - BST
+Optimal max path in a triangle
+print all boundaries of a BST
+Print diameter of A BST
+median of a bst
+Print Words
+Rotate Matrix
+
+Range Minimum Query and Least Common Ancestor using Binary Search - http://www.topcoder.com/tc?d1=tutorials&d2=lowestCommonAncestor&module=Static
+
+Algorithms Resources : http://algs4.cs.princeton.edu/home/
+http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index
+
+Permutations & Combinations Resources: http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=combinatorics
+
+
+High Level Design
+	Crawler
+		http://en.wikipedia.org/wiki/Distributed_web_crawling
+		http://en.wikipedia.org/wiki/Web_crawler
+	DB Shards
+		http://en.wikipedia.org/wiki/Shard_(database_architecture)

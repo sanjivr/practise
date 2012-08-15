@@ -1,0 +1,84 @@
+Unix
+    1. signal to a process
+    2. find a file that is older than n days
+    3. tar -zxvf, -zcvf, -ztvf    
+    4. change file permissions, owner
+    5. return code of a process    
+    6. stderr, stdout , redirect stdout to stderr.
+    7. usage of pipe/xargs
+    8. simple shell scripting
+    //Build
+    9. usage of ldd, nm
+Perl
+    1. define an empty array, length of an array
+    2. hash of array
+    3. keys/values from a hash
+    4. File/Directory operations in perl
+    5. next, last
+    6. match a given expression.
+    7. Obtain a match
+    8. Obtain nth match
+Regular Expressions
+    1. regular expression corresponding to a given sample.
+Makefiles
+    1. simple makefile to compile a c++ program
+    2. pick header files from a given location
+    3. static compilation of libraries
+    4. compile only don't link option
+    5. generate a dep file
+    6. link against a shared library
+    7. pick up shared library from a given location.
+    8. usage of ".phony" rule
+    9. complex rules in Makefile
+Autotools -    
+Perforce/SVN/CVS/Clearcase
+    1. Branching Strategy
+Packaging tools on unix/windows
+    1. Relative ease of use of each tool
+    2. dpkg vs rpm vs apt
+Algorithms 
+    1. Binary Sort
+    2. Mirror image of a binary tree.
+How did you fall into SCM Engineering.
+Rational Purify
+
+Older Questions
+Substring Search 
+Rabin Karp Algorithm
+Boyer Moore Algorithm
+
+OS Internals
+
+Semaphores
+Message Queues
+Shared Memory
+
+Reader – Writer Problem
+Bounded Buffer Problem
+Deadlock
+Virtual Memory
+Dining Philosophers
+Scheduling Techniques
+Threads
+
+Data Structures & Algorithms
+
+Binomial heaps.
+
+Red Black Trees.
+
+Minimum Spanning Tree’s.
+Single Source Shortest Path.
+All Sources Shortest Path.
+
+Dynamic Programming.
+
+
+
+UNIX
+
+GDB Debugger.
+GNU Autotools.
+
+sramamoorthy@paypal.com
+

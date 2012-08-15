@@ -1,0 +1,28 @@
+CC=gcc
+CXX=g++
+RM=rm -f
+#CPPFLAGS=-g $(shell root-config --cflags)
+#LDFLAGS=-g $(shell root-config --ldflags)
+#LDLIBS=$(shell root-config --libs)
+
+CXXSRC=doubly_linked_list.cc lru.cc
+OBJS=$(subst .cc,.o, $(CXXSRC))
+
+all: lru
+
+lru: $(OBJS)
+	$(CXX) $(LDFLAGS) -o lru $(OBJS) $(LDLIBS)
+
+
+depend: .depend
+
+.depend: $(SRCS)
+	rm -f ./depend
+	$(CXX) $(CPPFLAGS) -MM $^>>./.depend;
+	
+
+clean:
+	$(RM) $(OBJS)
+
+
+include .depend
