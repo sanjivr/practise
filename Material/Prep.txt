@@ -277,5 +277,15 @@ High Level Design
 	Crawler
 		http://en.wikipedia.org/wiki/Distributed_web_crawling
 		http://en.wikipedia.org/wiki/Web_crawler
+		http://www.michaelnielsen.org/ddi/how-to-crawl-a-quarter-billion-webpages-in-40-hours/
 	DB Shards
 		http://en.wikipedia.org/wiki/Shard_(database_architecture)
+
+Search Algorithms
+https://en.wikipedia.org/wiki/A*_search_algorithm
+
+Graph Coloring
+https://en.wikipedia.org/wiki/Graph_coloring
+
+Lat Long
+http://janmatuschek.de/LatitudeLongitudeBoundingCoordinates
